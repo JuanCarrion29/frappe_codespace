@@ -1,0 +1,5 @@
+_HiStOrY_V2_
+SELECT\040*\040FROM\040`tabDocType`\040WHERE\040module\040=\040'Inventario';
+DELETE\040FROM\040`tabDocType`\040WHERE\040module\040=\040'Inventario';
+cls
+exit

@@ -1,0 +1,1406 @@
+2024-10-03 16:56:19,528 ERROR frappe New Exception collected in error log
+Site: famouz
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Order","name":"new-purchase-order-mtcnnfelkw","__islocal":1,"__unsaved":1,"owner":"Administrator","estado_de_orden":"Recibida","order_item":[{"docstatus":0,"doctype":"Purchase Order Item","name":"new-purchase-order-item-ryqxlrdxnz","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-purchase-order-mtcnnfelkw","parentfield":"order_item","parenttype":"Purchase Order","idx":1,"__unedited":false,"producto":"BR-05","precio":500,"cantidad":25,"subtotal":12500}],"proveedor_order":"SUPP001","fecha_de_compra":"2024-10-03","almacen_destino":"WH-07","total":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-03 16:56:58,243 ERROR frappe New Exception collected in error log
+Site: famouz
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Order","name":"new-purchase-order-mtcnnfelkw","__islocal":1,"__unsaved":1,"owner":"Administrator","estado_de_orden":"Recibida","order_item":[{"docstatus":0,"doctype":"Purchase Order Item","name":"new-purchase-order-item-ryqxlrdxnz","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-purchase-order-mtcnnfelkw","parentfield":"order_item","parenttype":"Purchase Order","idx":1,"__unedited":false,"producto":"BR-05","precio":500,"cantidad":25,"subtotal":12500}],"proveedor_order":"SUPP001","fecha_de_compra":"2024-10-03","almacen_destino":"WH-07","total":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-03 16:58:42,430 ERROR frappe New Exception collected in error log
+Site: famouz
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Order","name":"new-purchase-order-mtcnnfelkw","__islocal":1,"__unsaved":1,"owner":"Administrator","estado_de_orden":"Recibida","order_item":[{"docstatus":0,"doctype":"Purchase Order Item","name":"new-purchase-order-item-ryqxlrdxnz","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-purchase-order-mtcnnfelkw","parentfield":"order_item","parenttype":"Purchase Order","idx":1,"__unedited":false,"producto":"BR-05","precio":500,"cantidad":25,"subtotal":12500},{"docstatus":0,"doctype":"Purchase Order Item","name":"new-purchase-order-item-mnwbbsfdam","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-purchase-order-mtcnnfelkw","parentfield":"order_item","parenttype":"Purchase Order","idx":2,"__unedited":false,"producto":"BR-06","precio":200,"cantidad":30,"subtotal":6000}],"proveedor_order":"SUPP001","fecha_de_compra":"2024-10-03","almacen_destino":"WH-07","total":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-03 17:38:23,448 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 118, in resolve_redirect
+    redirects += frappe.get_all(
+                 ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 2111, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 2086, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/db_query.py", line 193, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/db_query.py", line 234, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 124, in application
+    response = get_response()
+               ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/serve.py", line 28, in get_response
+    response = ErrorPage(exception=e).render()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/utils.py", line 530, in cache_html_decorator
+    html = func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 263, in get_website_settings
+    context.boot = get_boot_data()
+                   ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/utils.py", line 178, in get_boot_data
+    "date_format": get_date_format(),
+                   ^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/locale.py", line 21, in get_date_format
+    return get_locale_value("date_format", language) or "yyyy-mm-dd"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/locale.py", line 50, in get_locale_value
+    value = frappe.db.get_value("Language", lang, key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+2024-10-03 17:41:46,669 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 118, in resolve_redirect
+    redirects += frappe.get_all(
+                 ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 2111, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 2086, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/db_query.py", line 193, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/db_query.py", line 234, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 124, in application
+    response = get_response()
+               ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/serve.py", line 28, in get_response
+    response = ErrorPage(exception=e).render()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/utils.py", line 530, in cache_html_decorator
+    html = func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 263, in get_website_settings
+    context.boot = get_boot_data()
+                   ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/utils.py", line 178, in get_boot_data
+    "date_format": get_date_format(),
+                   ^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/locale.py", line 21, in get_date_format
+    return get_locale_value("date_format", language) or "yyyy-mm-dd"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/locale.py", line 50, in get_locale_value
+    value = frappe.db.get_value("Language", lang, key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+2024-10-03 17:45:39,956 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 118, in resolve_redirect
+    redirects += frappe.get_all(
+                 ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 2111, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 2086, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/db_query.py", line 193, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/db_query.py", line 234, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 124, in application
+    response = get_response()
+               ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/serve.py", line 28, in get_response
+    response = ErrorPage(exception=e).render()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/utils.py", line 530, in cache_html_decorator
+    html = func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 263, in get_website_settings
+    context.boot = get_boot_data()
+                   ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/utils.py", line 178, in get_boot_data
+    "date_format": get_date_format(),
+                   ^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/locale.py", line 21, in get_date_format
+    return get_locale_value("date_format", language) or "yyyy-mm-dd"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/locale.py", line 50, in get_locale_value
+    value = frappe.db.get_value("Language", lang, key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+2024-10-03 17:53:30,775 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 201, in init_request
+    frappe.local.http_request = HTTPRequest()
+                                ^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 43, in __init__
+    self.set_session()
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 77, in set_session
+    frappe.local.login_manager = LoginManager()
+                                 ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 119, in __init__
+    self.make_session(resume=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 209, in make_session
+    frappe.local.session_obj = Session(
+                               ^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 220, in __init__
+    self.resume()
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 304, in resume
+    self.validate_user()
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 228, in validate_user
+    if not frappe.get_cached_value("User", self.user, "enabled"):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1318, in get_cached_value
+    doc = get_cached_doc(doctype, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1261, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+2024-10-03 18:01:17,602 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 118, in resolve_redirect
+    redirects += frappe.get_all(
+                 ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 2111, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 2086, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/db_query.py", line 193, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/db_query.py", line 234, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 124, in application
+    response = get_response()
+               ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/serve.py", line 28, in get_response
+    response = ErrorPage(exception=e).render()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/utils.py", line 530, in cache_html_decorator
+    html = func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 263, in get_website_settings
+    context.boot = get_boot_data()
+                   ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/website/utils.py", line 178, in get_boot_data
+    "date_format": get_date_format(),
+                   ^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/locale.py", line 21, in get_date_format
+    return get_locale_value("date_format", language) or "yyyy-mm-dd"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/locale.py", line 50, in get_locale_value
+    value = frappe.db.get_value("Language", lang, key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.3' (using password: YES)")
+2024-10-03 18:12:06,819 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 201, in init_request
+    frappe.local.http_request = HTTPRequest()
+                                ^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 43, in __init__
+    self.set_session()
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 77, in set_session
+    frappe.local.login_manager = LoginManager()
+                                 ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 119, in __init__
+    self.make_session(resume=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 209, in make_session
+    frappe.local.session_obj = Session(
+                               ^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 220, in __init__
+    self.resume()
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 299, in resume
+    data = self.get_session_record()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 317, in get_session_record
+    r = self.get_session_data()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 334, in get_session_data
+    data = self.get_session_data_from_db()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 363, in get_session_data_from_db
+    ).run()
+      ^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+2024-10-03 18:12:26,268 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 201, in init_request
+    frappe.local.http_request = HTTPRequest()
+                                ^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 43, in __init__
+    self.set_session()
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 77, in set_session
+    frappe.local.login_manager = LoginManager()
+                                 ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 119, in __init__
+    self.make_session(resume=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 209, in make_session
+    frappe.local.session_obj = Session(
+                               ^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 220, in __init__
+    self.resume()
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 299, in resume
+    data = self.get_session_record()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 317, in get_session_record
+    r = self.get_session_data()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 334, in get_session_data
+    data = self.get_session_data_from_db()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 363, in get_session_data_from_db
+    ).run()
+      ^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+2024-10-03 18:12:28,669 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 201, in init_request
+    frappe.local.http_request = HTTPRequest()
+                                ^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 43, in __init__
+    self.set_session()
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 77, in set_session
+    frappe.local.login_manager = LoginManager()
+                                 ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 119, in __init__
+    self.make_session(resume=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 209, in make_session
+    frappe.local.session_obj = Session(
+                               ^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 220, in __init__
+    self.resume()
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 299, in resume
+    data = self.get_session_record()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 317, in get_session_record
+    r = self.get_session_data()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 334, in get_session_data
+    data = self.get_session_data_from_db()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 363, in get_session_data_from_db
+    ).run()
+      ^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+2024-10-03 18:12:31,308 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+Site: famouz
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 100, in application
+    init_request(request)
+  File "/workspace/frappe-bench/apps/frappe/frappe/app.py", line 201, in init_request
+    frappe.local.http_request = HTTPRequest()
+                                ^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 43, in __init__
+    self.set_session()
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 77, in set_session
+    frappe.local.login_manager = LoginManager()
+                                 ^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 119, in __init__
+    self.make_session(resume=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/auth.py", line 209, in make_session
+    frappe.local.session_obj = Session(
+                               ^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 220, in __init__
+    self.resume()
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 299, in resume
+    data = self.get_session_record()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 317, in get_session_record
+    r = self.get_session_data()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 334, in get_session_data
+    data = self.get_session_data_from_db()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/sessions.py", line 363, in get_session_data_from_db
+    ).run()
+      ^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 87, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/error.py", line 62, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/__init__.py", line 1387, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/document.py", line 85, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, fieldname="*")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 524, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 628, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 901, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_577d1a6302635529'@'172.18.0.2' (using password: YES)")

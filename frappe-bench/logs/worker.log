@@ -1,0 +1,341 @@
+2024-10-03 13:02:28,760 Worker rq:worker:d4b03bcfefe54b3fb29a6b9fe103d60e started with PID 11175, version 1.16.2
+2024-10-03 13:02:28,760 Subscribing to channel rq:pubsub:d4b03bcfefe54b3fb29a6b9fe103d60e
+2024-10-03 13:02:28,762 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 13:02:28,763 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 13:02:28,764 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 13:02:28,765 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 13:04:05,240 Worker d4b03bcfefe54b3fb29a6b9fe103d60e [PID 11175]: warm shut down requested
+2024-10-03 13:04:05,245 Unsubscribing from channel rq:pubsub:d4b03bcfefe54b3fb29a6b9fe103d60e
+2024-10-03 13:14:08,669 Worker rq:worker:1349578e9763410db3278fd1f00394f5 started with PID 16648, version 1.16.2
+2024-10-03 13:14:08,670 Subscribing to channel rq:pubsub:1349578e9763410db3278fd1f00394f5
+2024-10-03 13:14:08,672 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 13:14:08,672 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 13:14:08,674 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 13:14:08,675 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 13:15:24,557 workspace-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.create_contact', kwargs={'user': <User: waopara@diomio.io>, 'ignore_mandatory': True}, method='frappe.core.doctype.user.user.create_contact', site='famouz', user='Administrator') (famouz::92421f29-de34-4134-a7d2-ccb5dd42f58d)
+2024-10-03 13:15:25,610 workspace-frappe-bench:default: Job OK (famouz::92421f29-de34-4134-a7d2-ccb5dd42f58d)
+2024-10-03 13:15:25,610 Result is kept for 600 seconds
+2024-10-03 13:15:25,619 workspace-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.update_gravatar', kwargs={'name': 'waopara@diomio.io'}, method='frappe.core.doctype.user.user.update_gravatar', site='famouz', user='Administrator') (famouz::f8a0f039-4446-4137-afd7-6b96589cbdf8)
+2024-10-03 13:15:25,909 workspace-frappe-bench:default: Job OK (famouz::f8a0f039-4446-4137-afd7-6b96589cbdf8)
+2024-10-03 13:15:25,909 Result is kept for 600 seconds
+2024-10-03 13:27:23,292 Worker 1349578e9763410db3278fd1f00394f5 [PID 16648]: warm shut down requested
+2024-10-03 13:27:23,294 Unsubscribing from channel rq:pubsub:1349578e9763410db3278fd1f00394f5
+2024-10-03 13:27:28,285 Worker rq:worker:12f08a77a99e4019a6ca503022345d79 started with PID 26686, version 1.16.2
+2024-10-03 13:27:28,286 Subscribing to channel rq:pubsub:12f08a77a99e4019a6ca503022345d79
+2024-10-03 13:27:28,288 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 13:27:28,288 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 13:27:28,290 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 13:27:28,291 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 13:40:58,361 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 13:40:58,362 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 13:40:58,363 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 13:54:28,498 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 13:54:28,500 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 13:54:28,501 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 14:07:58,596 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 14:07:58,597 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 14:07:58,598 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 14:21:28,734 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 14:21:28,735 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 14:21:28,736 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 14:32:15,301 Worker 12f08a77a99e4019a6ca503022345d79 [PID 26686]: warm shut down requested
+2024-10-03 14:32:15,310 Unsubscribing from channel rq:pubsub:12f08a77a99e4019a6ca503022345d79
+2024-10-03 14:32:20,008 Worker rq:worker:1764cf074fd34581bb36712ecc461d65 started with PID 61521, version 1.16.2
+2024-10-03 14:32:20,008 Subscribing to channel rq:pubsub:1764cf074fd34581bb36712ecc461d65
+2024-10-03 14:32:20,010 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 14:32:20,011 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 14:32:20,012 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 14:32:20,014 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 14:45:50,113 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 14:45:50,114 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 14:45:50,115 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 14:59:20,256 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 14:59:20,257 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 14:59:20,258 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 15:12:50,304 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 15:12:50,305 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 15:12:50,306 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 15:15:14,114 Worker 1764cf074fd34581bb36712ecc461d65 [PID 61521]: warm shut down requested
+2024-10-03 15:15:14,117 Unsubscribing from channel rq:pubsub:1764cf074fd34581bb36712ecc461d65
+2024-10-03 15:15:19,081 Worker rq:worker:abde919e6067481cb6eda449acb18d11 started with PID 98828, version 1.16.2
+2024-10-03 15:15:19,081 Subscribing to channel rq:pubsub:abde919e6067481cb6eda449acb18d11
+2024-10-03 15:15:19,083 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 15:15:19,083 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 15:15:19,085 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 15:15:19,086 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 15:28:49,128 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 15:28:49,129 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 15:28:49,130 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 15:42:19,157 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 15:42:19,158 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 15:42:19,159 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 15:55:49,335 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 15:55:49,337 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 15:55:49,338 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 16:09:19,421 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 16:09:19,422 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 16:09:19,423 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 16:22:49,579 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 16:22:49,580 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 16:22:49,581 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 16:36:19,728 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 16:36:19,729 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 16:36:19,730 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 16:43:27,937 Worker abde919e6067481cb6eda449acb18d11 [PID 98828]: warm shut down requested
+2024-10-03 16:43:27,947 Unsubscribing from channel rq:pubsub:abde919e6067481cb6eda449acb18d11
+2024-10-03 16:43:33,586 Worker rq:worker:1216261ceeb14d28a3d8d4aeedf1440c started with PID 145140, version 1.16.2
+2024-10-03 16:43:33,586 Subscribing to channel rq:pubsub:1216261ceeb14d28a3d8d4aeedf1440c
+2024-10-03 16:43:33,588 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 16:43:33,588 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 16:43:33,590 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 16:43:33,591 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 16:57:03,778 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 16:57:03,779 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 16:57:03,780 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 17:02:47,021 Worker 1216261ceeb14d28a3d8d4aeedf1440c [PID 145140]: warm shut down requested
+2024-10-03 17:02:47,022 Unsubscribing from channel rq:pubsub:1216261ceeb14d28a3d8d4aeedf1440c
+2024-10-03 17:38:12,312 Worker rq:worker:b77506da3e2647adb2482f0540339253 started with PID 3905, version 1.16.2
+2024-10-03 17:38:12,365 Subscribing to channel rq:pubsub:b77506da3e2647adb2482f0540339253
+2024-10-03 17:38:12,367 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 17:38:12,368 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 17:38:12,369 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 17:38:12,370 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 17:41:41,081 Worker rq:worker:c1ecab2cbf0a4693b46861a19e257802 started with PID 2944, version 1.16.2
+2024-10-03 17:41:41,081 Subscribing to channel rq:pubsub:c1ecab2cbf0a4693b46861a19e257802
+2024-10-03 17:41:41,083 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 17:41:41,084 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 17:41:41,086 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 17:41:41,089 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 17:42:03,956 Worker c1ecab2cbf0a4693b46861a19e257802 [PID 2944]: warm shut down requested
+2024-10-03 17:42:03,963 Unsubscribing from channel rq:pubsub:c1ecab2cbf0a4693b46861a19e257802
+2024-10-03 17:45:30,655 Worker rq:worker:b8a74980f85b4685909e5a25e1cdb891 started with PID 1398, version 1.16.2
+2024-10-03 17:45:30,656 Subscribing to channel rq:pubsub:b8a74980f85b4685909e5a25e1cdb891
+2024-10-03 17:45:30,658 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 17:45:30,658 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 17:45:30,661 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 17:45:30,665 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 17:45:53,330 Worker b8a74980f85b4685909e5a25e1cdb891 [PID 1398]: warm shut down requested
+2024-10-03 17:45:53,337 Unsubscribing from channel rq:pubsub:b8a74980f85b4685909e5a25e1cdb891
+2024-10-03 17:53:19,211 Worker rq:worker:a156e12f85174735b1d805a37e09ab05 started with PID 7279, version 1.16.2
+2024-10-03 17:53:19,211 Subscribing to channel rq:pubsub:a156e12f85174735b1d805a37e09ab05
+2024-10-03 17:53:19,213 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 17:53:19,214 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 17:53:19,215 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 17:53:19,216 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 17:54:23,412 Worker a156e12f85174735b1d805a37e09ab05 [PID 7279]: warm shut down requested
+2024-10-03 17:54:23,422 Unsubscribing from channel rq:pubsub:a156e12f85174735b1d805a37e09ab05
+2024-10-03 18:01:05,436 Worker rq:worker:42fb74a483924bb8819a522ac9de129b started with PID 12223, version 1.16.2
+2024-10-03 18:01:05,437 Subscribing to channel rq:pubsub:42fb74a483924bb8819a522ac9de129b
+2024-10-03 18:01:05,452 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 18:01:05,452 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 18:01:05,454 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 18:01:05,455 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 18:12:01,943 Worker rq:worker:291315ea74134696a35b8d079b7f1b42 started with PID 1361, version 1.16.2
+2024-10-03 18:12:01,944 Subscribing to channel rq:pubsub:291315ea74134696a35b8d079b7f1b42
+2024-10-03 18:12:01,946 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-03 18:12:01,947 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-03 18:12:01,949 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-03 18:12:01,951 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-03 18:14:30,802 Worker 291315ea74134696a35b8d079b7f1b42 [PID 1361]: warm shut down requested
+2024-10-03 18:14:30,812 Unsubscribing from channel rq:pubsub:291315ea74134696a35b8d079b7f1b42
+2024-10-04 15:11:34,372 Worker rq:worker:522829c053514a7a8d9f4fcad8964850 started with PID 2063, version 1.16.2
+2024-10-04 15:11:34,374 Subscribing to channel rq:pubsub:522829c053514a7a8d9f4fcad8964850
+2024-10-04 15:11:34,376 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-04 15:11:34,377 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-04 15:11:34,379 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-04 15:11:34,380 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-04 15:22:37,739 Worker rq:worker:042b2dad720448bca43e7da3034b9a4a started with PID 4533, version 1.16.2
+2024-10-04 15:22:37,739 Subscribing to channel rq:pubsub:042b2dad720448bca43e7da3034b9a4a
+2024-10-04 15:22:37,741 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-04 15:22:37,742 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-04 15:22:37,743 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-04 15:22:37,744 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-04 15:22:55,389 Worker 042b2dad720448bca43e7da3034b9a4a [PID 4533]: warm shut down requested
+
+:: Error 111 connecting to redis-queue:6379. Connection refused. ::
+
+Context:
+ File '/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py', line 283
+
+ 278:                 lambda: self._connect(), lambda error: self.disconnect(error)
+ 279:             )
+ 280:         except socket.timeout:
+ 281:             raise TimeoutError("Timeout connecting to server")
+ 282:         except OSError as e:
+ 283>             raise ConnectionError(self._error_message(e))
+ 284: 
+ 285:         self._sock = sock
+ 286:         try:
+ 287:             if self.redis_connect_func is None:
+ 288:                 # Use the default on_connect function
+
+Full traceback:
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 277, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 278, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 639, in _connect
+    raise err
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 627, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 47, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 314, in start_worker
+    worker.work(
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 458, in work
+    self.teardown()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 1048, in teardown
+    self.register_death()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 834, in register_death
+    p.execute()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 1497, in execute
+    conn = self.connection_pool.get_connection("MULTI", self.shard_hint)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 1074, in get_connection
+    connection.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 283, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to redis-queue:6379. Connection refused.
+
+Error 111 connecting to redis-queue:6379. Connection refused.
+2024-10-04 15:24:37,043 Worker rq:worker:0b0cf4643f8340259543cb2aafd30e5a started with PID 3463, version 1.16.2
+2024-10-04 15:24:37,044 Subscribing to channel rq:pubsub:0b0cf4643f8340259543cb2aafd30e5a
+2024-10-04 15:24:37,050 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-04 15:24:37,051 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-04 15:24:37,053 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-04 15:24:37,056 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-04 15:25:07,992 Worker 0b0cf4643f8340259543cb2aafd30e5a [PID 3463]: warm shut down requested
+2024-10-04 15:25:07,994 Unsubscribing from channel rq:pubsub:0b0cf4643f8340259543cb2aafd30e5a
+2024-10-04 15:59:59,777 Worker rq:worker:6c8a6585089d408ca9b233d5898c090e started with PID 2592, version 1.16.2
+2024-10-04 15:59:59,779 Subscribing to channel rq:pubsub:6c8a6585089d408ca9b233d5898c090e
+2024-10-04 15:59:59,780 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-04 15:59:59,781 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-04 15:59:59,782 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-04 15:59:59,784 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-04 16:01:24,395 workspace-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.create_contact', kwargs={'user': <User: thebestadmin@io.io>, 'ignore_mandatory': True}, method='frappe.core.doctype.user.user.create_contact', site='timelezz', user='Administrator') (timelezz::3eab0d13-ca2c-4766-b2e7-e769cd4b0190)
+2024-10-04 16:01:25,360 workspace-frappe-bench:default: Job OK (timelezz::3eab0d13-ca2c-4766-b2e7-e769cd4b0190)
+2024-10-04 16:01:25,360 Result is kept for 600 seconds
+2024-10-04 16:01:25,371 workspace-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.update_gravatar', kwargs={'name': 'thebestadmin@io.io'}, method='frappe.core.doctype.user.user.update_gravatar', site='timelezz', user='Administrator') (timelezz::fff8978f-953c-4e8c-8720-e2ea369dae76)
+2024-10-04 16:01:25,696 workspace-frappe-bench:default: Job OK (timelezz::fff8978f-953c-4e8c-8720-e2ea369dae76)
+2024-10-04 16:01:25,696 Result is kept for 600 seconds
+2024-10-04 16:14:55,790 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-04 16:14:55,791 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-04 16:14:55,792 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-04 16:15:56,159 Worker 6c8a6585089d408ca9b233d5898c090e [PID 2592]: warm shut down requested
+2024-10-04 16:15:56,164 Unsubscribing from channel rq:pubsub:6c8a6585089d408ca9b233d5898c090e
+2024-10-04 16:16:18,555 Worker rq:worker:88fcf1f429d445bd9153bc76283e9278 started with PID 9871, version 1.16.2
+2024-10-04 16:16:18,555 Subscribing to channel rq:pubsub:88fcf1f429d445bd9153bc76283e9278
+2024-10-04 16:16:18,557 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-04 16:16:18,557 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-04 16:16:18,559 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-04 16:16:18,560 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-04 16:17:13,821 Worker 88fcf1f429d445bd9153bc76283e9278 [PID 9871]: warm shut down requested
+2024-10-04 16:17:13,823 Unsubscribing from channel rq:pubsub:88fcf1f429d445bd9153bc76283e9278
+2024-10-04 16:17:19,754 Worker rq:worker:9e52bf77183044f1b63dc3ae1a3cd9b7 started with PID 10534, version 1.16.2
+2024-10-04 16:17:19,755 Subscribing to channel rq:pubsub:9e52bf77183044f1b63dc3ae1a3cd9b7
+2024-10-04 16:17:19,757 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-04 16:17:19,757 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-04 16:17:19,760 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-04 16:17:19,762 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-04 16:17:29,917 Worker 9e52bf77183044f1b63dc3ae1a3cd9b7 [PID 10534]: warm shut down requested
+2024-10-04 16:17:29,922 Unsubscribing from channel rq:pubsub:9e52bf77183044f1b63dc3ae1a3cd9b7
+2024-10-07 22:42:49,888 Worker rq:worker:a5bfaa6d54b045689e2a2e607a756f9b started with PID 1992, version 1.16.2
+2024-10-07 22:42:49,908 Subscribing to channel rq:pubsub:a5bfaa6d54b045689e2a2e607a756f9b
+2024-10-07 22:42:49,910 *** Listening on workspace-frappe-bench:short, workspace-frappe-bench:default, workspace-frappe-bench:long...
+2024-10-07 22:42:49,911 Cleaning registries for queue: workspace-frappe-bench:short
+2024-10-07 22:42:49,912 Cleaning registries for queue: workspace-frappe-bench:default
+2024-10-07 22:42:49,913 Cleaning registries for queue: workspace-frappe-bench:long
+2024-10-07 22:43:28,944 Worker a5bfaa6d54b045689e2a2e607a756f9b [PID 1992]: warm shut down requested
+
+:: Error 111 connecting to redis-queue:6379. Connection refused. ::
+
+Context:
+ File '/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py', line 283
+
+ 278:                 lambda: self._connect(), lambda error: self.disconnect(error)
+ 279:             )
+ 280:         except socket.timeout:
+ 281:             raise TimeoutError("Timeout connecting to server")
+ 282:         except OSError as e:
+ 283>             raise ConnectionError(self._error_message(e))
+ 284: 
+ 285:         self._sock = sock
+ 286:         try:
+ 287:             if self.redis_connect_func is None:
+ 288:                 # Use the default on_connect function
+
+Full traceback:
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 277, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 278, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 639, in _connect
+    raise err
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 627, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 47, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/workspace/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 314, in start_worker
+    worker.work(
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 458, in work
+    self.teardown()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 1048, in teardown
+    self.register_death()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/rq/worker.py", line 834, in register_death
+    p.execute()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/client.py", line 1497, in execute
+    conn = self.connection_pool.get_connection("MULTI", self.shard_hint)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 1074, in get_connection
+    connection.connect()
+  File "/workspace/frappe-bench/env/lib/python3.11/site-packages/redis/connection.py", line 283, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to redis-queue:6379. Connection refused.
+
+Error 111 connecting to redis-queue:6379. Connection refused.
